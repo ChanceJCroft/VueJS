@@ -9,6 +9,21 @@
 <body>
     <div id="helloVue">
         <h1>{{ title }}</h1>
+        <p>{{message}}</p>
+    </div>
+    <div id="example">
+        <h1>Using Vue template: {{ title}}, {{ name.toUpperCase() }}</h1>
+        <img :src="img.src" :alt="img.alt">
+        <p>{{message}}</p>
+    </div>
+
+
+    <div id="book">
+        <h2 v-on:click="toggleDetails">{{title}}</h2>
+        <div id="bookDetail" v-show="showDetail">
+        <p>{{author}}</p>
+        <p>{{summary}}</p>
+        </div>
     </div>
 
 
